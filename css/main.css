@@ -1,0 +1,155 @@
+:root {
+	--forest-green: #228B22;
+	--olive-green: #808000;
+	--sage-green: #97976F;
+	--kelly-green: #4CBB17;
+	--hunter-green: #355E3B;
+	--earthy-brown: #A67B5B;
+	--terra-cotta: #E2725B;
+	--rust-red: #8B2500;
+	--deep-teal: #008080;
+	--moss-green: #658B38;
+	--olive-drab: #6B8E23;
+	--forest-brown: #5E2612;
+	--dark-khaki: #BDB76B;
+	--rusty-orange: #CC5500;
+	--sandstone: #C2B280;
+	--sepia: #704214;
+	--light-olive: #ACAC58;
+	--khaki: #C3B091;
+	--beige: #F5F5DC;
+  }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Start Here */
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+	color: var(--beige);
+
+}
+nav span{
+	cursor: pointer;
+}
+nav a{
+	text-decoration: none;
+	color: var(--beige);
+}
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: var(--earthy-brown);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 10px;
+  }
+main{
+	background-image: url(/img/lawnmowerbg.jpg);
+	background-size: cover; /* to fit the image normally */
+	background-repeat: no-repeat; /* to prevent repeating */
+	height: 100vh;
+	width: 100%;
+}
+.main-text{
+	position: absolute;
+	top: 45%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	/* right: 20%; */
+}
+.main-text h1{
+	font-size: 42px;
+	color: var(--beige);
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.main-text p{
+	font-size: 30px;
+	color: var(--beige);
+	font-weight: 500;
+}
+
+
+#about-us{
+	display: flex;
+	margin-bottom: 10%;
+	margin-left: 10%;
+	display: flex;
+	margin-right: 10%;
+	align-items: center;
+	color: var(--hunter-green);
+
+}
+#about-us h2{
+	font-size: 35px;
+	margin-bottom:.5% ;
+
+}
+#about-us p {
+	width: 60%;
+	font-weight: 400;
+	font-size: 30px;
+}
+.about-img img{
+	width: 400px;
+	height: 650px;
+}
