@@ -103,8 +103,8 @@ nav{
   }
 main{
 	background-image: url(/img/lawnmowerbg.jpg);
-	background-size: cover; /* to fit the image normally */
-	background-repeat: no-repeat; /* to prevent repeating */
+	background-size: cover;
+	background-repeat: no-repeat;
 	height: 100vh;
 	width: 100%;
 }
@@ -114,7 +114,7 @@ main{
 	left: 75%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	/* right: 20%; */
+
 }
 .main-text h1{
 	font-size: 42px;
@@ -127,9 +127,19 @@ main{
 	color: var(--beige);
 	font-weight: 500;
 }
+.main-text button{
+	padding: 10px 15px;
+	margin-top: 5%;
+	color: var(--beige);
+	background-color: var(--forest-brown);
+	font-weight: 900;
+	font-size: 25px;
+	border-radius: 5px;
+}
 
 
 #about-us{
+	margin-top: 2%;
 	display: flex;
 	margin-bottom: 10%;
 	margin-left: 10%;
@@ -152,4 +162,25 @@ main{
 .about-img img{
 	width: 400px;
 	height: 650px;
+	border-radius:30px;
+}
+#services{
+	width: 100%;
+}
+#services h2{
+	display: flex;
+	justify-content: center;
+}
+.row{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+#services div{
+ 	/* display: flex;
+     justify-content: space-between; */
+   	width: 100%;
+}
+#services div h3{
+	
 }
