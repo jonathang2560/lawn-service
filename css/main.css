@@ -150,13 +150,14 @@ main{
 
 }
 #about-us h2{
-	font-size: 35px;
+	font-size: 45px;
 	margin-bottom:.5% ;
+	font-weight: 700;
 
 }
 #about-us p {
 	width: 60%;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 30px;
 }
 .about-img img{
@@ -164,23 +165,61 @@ main{
 	height: 650px;
 	border-radius:30px;
 }
+
+
+
+
+
+
+
+
+
 #services{
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	color: var(--hunter-green);
 }
 #services h2{
 	display: flex;
+	text-align: center;
 	justify-content: center;
+	margin-bottom: 1rem;
+	font-size: 45px;
+	margin-bottom: 3%;
+	font-weight: 750;
 }
 .row{
 	display: flex;
-	justify-content: space-around;
+	flex-direction: row;
+	align-items: center;
 	width: 100%;
+	margin-bottom: 1rem;
 }
 #services div{
- 	/* display: flex;
-     justify-content: space-between; */
-   	width: 100%;
+	width: 100%;
 }
-#services div h3{
-	
+.row h3{
+	width: 100%;
+	text-align: center;
+	margin-bottom: 0.5rem;
+	font-size: 35px;
+	margin-top: 1%;
+}
+.row p{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	margin: 1% 10%;
+	font-size: 30px;
+	width: 80%;
+	font-weight: 500;
+}
+.row img{
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
 }
