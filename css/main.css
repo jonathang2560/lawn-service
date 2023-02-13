@@ -94,7 +94,7 @@ nav{
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: var(--earthy-brown);
+	background-color: rgba(0,0,0,0.9);
 	height: 50px;
 	display: flex;
 	align-items: center;
@@ -109,12 +109,13 @@ main{
 	width: 100%;
 }
 .main-text{
-	position: absolute;
+	/* position: absolute;
 	top: 45%;
 	left: 75%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-
+	transform: translate(-50%, -50%);*/
+	text-align: center; 
+	margin-left: 60%;
+	padding-top: 18%;
 }
 .main-text h1{
 	font-size: 42px;
@@ -208,6 +209,7 @@ main{
 	margin-bottom: 0.5rem;
 	font-size: 35px;
 	margin-top: 1%;
+	font-weight: 700;
 }
 .row p{
 	display: flex;
@@ -224,4 +226,5 @@ main{
 	border-radius: 50%;
 	margin: 0 auto;
 	display: block;
+	margin-bottom: 50px;
 }
