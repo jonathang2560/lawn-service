@@ -131,10 +131,12 @@ main{
 	padding: 10px 15px;
 	margin-top: 5%;
 	color: var(--beige);
-	background-color: var(--forest-brown);
-	font-weight: 900;
+	background-color: var(--earthy-brown);
+	font-weight: 700;
 	font-size: 25px;
-	border-radius: 5px;
+	border-radius: 10px;
+	border-color: var(--earthy-brown);
+	cursor: pointer;
 }
 
 
