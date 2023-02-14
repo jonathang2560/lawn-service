@@ -11,7 +11,7 @@
     <header>
         <nav>
             <ul>
-                <span>Beaumont Lawn-Service</span>
+                <span>G&S Lawn-Service</span>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact Us</a></li>
@@ -22,14 +22,29 @@
 
 <main>
     <div class="main-text">
-        <h1>Beaumont Lawn-Service</h1>
-        <p>Book your yard-cut appointment today!</p>
+        <h1>G&S Lawn-Service</h1>
+<!--       
+        <p id="text-container" class="typing">We work with</p>
+        <div id="cursor" class="cursor"></div> -->
+
+
+
+
+        <div class="wrapper">
+          <div class="static-txt">We work with</div>
+          <ul class="dynamic-txts"></ul>
+          <li><span>Residential Properties</span></li>
+          <li><span>Commericial Properties</span></li>
+          <li><span>and everything else!</span></li>
+        </div>
+
         <button>Book Now</button>
     </div>
 </main>
 
+
 <!-- --------------------about us---------------------- -->
-<section id="about-us">
+<!-- <section id="about-us">
     <div class="about-text">
     <h2>About Us</h2>
     <p>At Beaumont Lawn-Service, we provide top-notch lawn care services for your home or business. Our team of experienced professionals will work with you to create a customized plan that fits your specific needs. Whether you need regular lawn maintenance or a one-time yard clean-up, we've got you covered. Contact us today to book your next appointment.</p>
@@ -37,10 +52,10 @@
 <div class="about-img">
     <img src="img/annie-spratt-ch_j5gH6INY-unsplash.jpg" alt="">
 </div>
-  </section>
+  </section> -->
 
 <!-- -----------------------Services---------------------- -->
-  <section id="services">
+  <!-- <section id="services">
     <h2>Our Services</h2>
     <div class="row">
       <div class="lawn-mowing">
@@ -67,22 +82,33 @@
     </div>
     
 
-  </section>
+  </section> -->
+
+
+
+
 <!-- -----------------Book now-------------------- -->
   <!-- <section id="book-now">
     <h2>Book Your Next Appointment</h2>
-    <form action="#">
-      <input type="text" placeholder="Name">
-      <input type="email" placeholder="Email">
-      <input type="tel" placeholder="Phone">
-      <textarea placeholder="Message"></textarea>
-      <input type="submit" value="Submit">
-    </form>
-  </section> -->
+    <div class="right">
+   
+      <form action="https://formsubmit.co/el/pubiya" target="_blank"method="POST" >
 
+        <input type="text" name="name" placeholder="Your Name"required>
+        <input type="text" name="email" placeholder="Your Email"required>
+        <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+
+      </form>
+
+      <span id="message"></span>
+    </div>
+  </section>
+  
+  <script src="https://kit.fontawesome.com/aa63f18da0.js" crossorigin="anonymous"></script>
   <footer>
     <p>&copy; Beaumont Lawn-Service 2023</p>
-  </footer>
+  </footer> -->
 </body>
 </html>
 
