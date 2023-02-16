@@ -322,7 +322,7 @@ footer{
 
 /* --------------------responsiveness----------------------- */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 650px) {
 	/* Adjust font sizes for smaller screens */
 	
 	*{
@@ -359,6 +359,7 @@ footer{
 		border-radius: 50%;
 		width: 300px;
 		height: 300px;
+		margin-top: 50px;
 	}
 	.btn2{
 		width: 270px;
