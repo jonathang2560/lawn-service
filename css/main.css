@@ -196,6 +196,7 @@ main{
 	display: flex;
 	flex-direction: column;
 	color: var(--hunter-green);
+	margin-top: 50px;
 }
 #services h2{
 	display: flex;
