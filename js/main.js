@@ -76,3 +76,33 @@ navLinks.forEach(link => {
     }); // smooth scroll to the target section
   });
 });
+
+
+// -----------------pop-up on submit-----------------------
+const form = document.querySelector('form');
+const message = document.querySelector('#message');
+const p = document.querySelector('#book-now p');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // prevent default form submission behavior
+  
+  const formData = new FormData(form); // create a new FormData object to store the form data
+  const xhr = new XMLHttpRequest(); // create a new XMLHttpRequest object
+  xhr.open('POST', 'https://formsubmit.co/el/pubiya'); // set the destination URL for the form data
+  
+  xhr.onload = () => {
+    if (xhr.status === 200) {
+      // if the form was submitted successfully, show the success message for 5 seconds
+      p.style.display = 'block';
+      form.reset();
+      setTimeout(() => {
+        p.style.display = 'none';
+      }, 5000);
+    } else {
+      // if there was an error submitting the form, show an error message
+      message.textContent = 'There was an error submitting the form. Please try again.';
+    }
+  };
+  
+  xhr.send(formData); // send the form data using an AJAX request
+});
